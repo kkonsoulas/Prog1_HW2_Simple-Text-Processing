@@ -1,0 +1,59 @@
+For each of the following tests use the values of the constants
+listed and when executing the listed program arguments.
+ 
+In autolab there will be more tests, but they will be derivatives
+of the following (e.g. instead of a test with -h -p options may be present
+two, one with only -h and one with only -p).
+
+Additionally, autolab will have tests for error states (eg error
+number of arguments)
+
+==============================
+a_in1:
+
+definitions:
+#define MAX_WORDS 100
+#define MAX_WORD_LEN 24
+#define MAX_SYNONYMS 100
+#define MAX_LINE_LEN 50
+#define MAX_FILENAME_LEN 20
+
+program arguments: -p -h
+
+==============================
+
+a_in2:
+
+definitions:
+#define MAX_WORDS 50
+#define MAX_WORD_LEN 24
+#define MAX_SYNONYMS 100
+#define MAX_LINE_LEN 55
+#define MAX_FILENAME_LEN 20
+
+program arguments: -p -h
+
+==============================
+
+a_in3:
+
+definitions:
+#define MAX_WORDS 100
+#define MAX_WORD_LEN 24
+#define MAX_SYNONYMS 100
+#define MAX_LINE_LEN 70
+#define MAX_FILENAME_LEN 20
+
+program arguments: -p -h -r s_in3
+
+==============================
+a_in4:
+
+definitions:
+#define MAX_WORDS 40000
+#define MAX_WORD_LEN 24
+#define MAX_SYNONYMS 100
+#define MAX_LINE_LEN 70
+#define MAX_FILENAME_LEN 20
+
+program arguments: -p -h -r s_in4 
