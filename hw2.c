@@ -260,10 +260,6 @@ void print_synonyms(char *words_ptr[][2], char synonyms[][MAX_WORD_LEN*2]){
 				continue;
 			}
 			
-			if(words_ptr[i] == NULL){
-				break;
-			}
-			
 			if(strcmp(*words_ptr[i], synonyms[j]) == 0){
 				
 				words_ptr[i][1] = synonyms[j];
@@ -272,8 +268,6 @@ void print_synonyms(char *words_ptr[][2], char synonyms[][MAX_WORD_LEN*2]){
 		}
 	}
 }
-
-
 
 
 
